@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/koorgoo/translate"
+	"github.com/koorgoo/translate/lib/translate"
 )
 
 var (
