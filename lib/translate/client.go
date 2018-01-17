@@ -117,7 +117,7 @@ func unmarshal(r io.Reader) (*response, error) {
 		return nil, fmt.Errorf("translate: %v: %q", err, string(b))
 	}
 	if v.Code != nil && *v.Code != codeOK {
-		return nil, fmt.Errorf("translate: %v: %v", v.Code, v.Message)
+		return nil, fmt.Errorf("translate: %v: %v", *v.Code, v.Message)
 	}
 	return v, nil
 }
